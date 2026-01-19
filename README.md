@@ -9,18 +9,6 @@
 *   **高质量 (High Quality)**：内置最佳实践、代码规范与质量门禁。
 *   **可解释性 (Explainability)**：每一步都有据可依，易于审查与回溯。
 
-## 📦 Skills 列表 (Skill List)
-
-### 1. Backend Workflow (后端标准化工作流)
-*   **路径**: `backend-workflow/`
-*   **简介**: 从详细设计文档到后端代码落地的全流程标准化方案。
-*   **核心特性**:
-    *   **⚖️ 任务分级 (Task Grading)**：根据任务规模（S/M/L）动态调整流程繁简度，拒绝杀鸡用牛刀。
-    *   **🛡️ 质量门禁 (Quality Gates)**：内置 DDL 确认、API 契约确认、覆盖率审计等关键检查点。
-    *   **🧪 测试驱动 (TDD)**：强制要求单元测试，追求 ≥85% 的核心业务覆盖率。
-    *   **🔄 闭环反馈 (Feedback Loop)**：实现细节反哺设计文档，确保文档与代码的一致性。
-*   **适用场景**: Java (Spring Boot) / Python 后端开发。
-
 ## 🚀 如何使用 (Usage)
 
 这些 Skill 旨在被 AI Agent (如 Antigravity) 在执行特定任务时加载并遵循。
@@ -28,6 +16,33 @@
 1.  **加载 Skill**: Agent 在识别到相关任务时，会主动读取对应目录下的 `SKILL.md`。
 2.  **遵循指引**: Agent 将严格按照 Skill 中定义的步骤（Step-by-Step）执行，并在关键节点请求用户确认。
 3.  **产出交付**: 最终生成符合 Skill 定义的标准交付物（代码、测试、文档）。
+
+## 配置地址
+| 工具               | 项目路径            | 全局路径                        | 文档                                                                                    |
+| ------------------ | ------------------- | ------------------------------- | ------------------------------------------------------------------------------------------- |
+| **Antigravity**    | `.agent/skills/`    | `~/.gemini/antigravity/skills/` | [Antigravity Skills](https://antigravity.google/docs/skills)                                |
+| **Claude Code**    | `.claude/skills/`   | `~/.claude/skills/`             | [Claude Code Skills](https://code.claude.com/docs/en/skills)                                |
+| **Gemini CLI**     | `.gemini/skills/`   | `~/.gemini/skills/`             | [Gemini CLI Skills](https://geminicli.com/docs/cli/skills/)                                 |
+
+## 常用 Skills 中文导航站
+### https://skillstore.io/zh-hans/skills
+一个集中展示和搜索社区 Skills 的中文导航站，帮助你快速发现和安装适合的 Skill。
+
+## 📦 Skills 列表 (Skill List)
+
+| Skill | 一句话介绍 |
+|-------|-----------|
+| **backend-workflow** | 从详细设计文档到后端代码落地的标准化工作流，支持任务分级、质量门禁与 TDD。 |
+| **docx** | Word 文档创建、编辑与分析，支持修订追踪、批注与格式保留。 |
+| **pdf** | PDF 处理工具包，涵盖文本/表格提取、创建新 PDF、合并/拆分与表单填写。 |
+| **pptx** | PowerPoint 演示文稿创建、编辑与分析，支持 HTML 转 PPT 与模板复用。 |
+| **skill-creator** | Skill 创建指南，帮助设计和打包有效的 AI Agent 能力扩展包。 |
+| **skill-installer** | 从 GitHub 或精选列表一键安装 Skill 到本地环境。 |
+| **skill-writer** | Claude Code Agent Skill 编写指南，引导创建符合规范的 SKILL.md。 |
+| **ui-ux-pro-max** | UI/UX 设计智能库，内置 50 种风格、21 套配色、50 组字体搭配与多框架最佳实践。 |
+| **xlsx** | Excel 电子表格创建、编辑与分析，支持公式、格式与数据可视化。 |
+
+
 
 ## 🤝 贡献 (Contribution)
 
